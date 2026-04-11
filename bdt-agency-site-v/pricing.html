@@ -1,65 +1,211 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing | Blessing DevTech Solutions</title>
-  <meta name="description" content="Explore service packages from Blessing DevTech Solutions." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Monthly website management and hosting plans for businesses that want reliable support, performance, and ongoing website care." />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0b1020" />
-  <link rel="canonical" href="https://example.vercel.app/pricing" />
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><span class="brand-mark">BDT</span><span><strong>Blessing DevTech</strong><small>Solutions</small></span></a><button class="menu-toggle">☰</button><nav class="site-nav"><a href="/services">Services</a><a href="/work">Work</a><a href="/about">About</a><a href="/pricing" class="active">Pricing</a><a href="/contact" class="nav-cta">Start a Project</a><button class="theme-toggle">◐</button></nav></div></header>
-<main>
-<section class="page-hero section"><div class="container narrow reveal"><p class="eyebrow">PRICING</p><h1>Flexible packages that look realistic for client conversations.</h1><p class="lead">These are sample packages you can later customize with your own final rates and scope.</p></div></section>
-<section class="section"><div class="container pricing-grid">
-<article class="price-card reveal"><p class="plan">Starter</p><h2>R4,500</h2><p>For smaller businesses needing a clean online presence.</p><ul><li>Single-page or simple compact site</li><li>Mobile responsive design</li><li>Core business sections</li><li>Basic contact form</li></ul><a class="btn btn-secondary" href="/contact">Enquire</a></article>
-<article class="price-card featured reveal delay-1"><p class="plan">Growth</p><h2>R9,500</h2><p>For brands that want a stronger business-ready website.</p><ul><li>Multi-page website</li><li>Premium layout and section structure</li><li>Conversion-focused content flow</li><li>Basic animations and premium polish</li></ul><a class="btn btn-primary" href="/contact">Most Popular</a></article>
-<article class="price-card reveal delay-2"><p class="plan">Custom</p><h2>Custom Quote</h2><p>For larger websites, internal tools, automation, or custom business systems.</p><ul><li>Advanced page structure</li><li>Tailored functionality</li><li>Automation or portal planning</li><li>Project-based consultation</li></ul><a class="btn btn-secondary" href="/contact">Book a Call</a></article>
-</div></section>
-<section class="section"><div class="container faq-grid">
-<div class="faq-item reveal"><button>Can these packages be adjusted?</button><div><p>Yes. They are intentionally structured to feel realistic while still being flexible for different client sizes and requirements.</p></div></div>
-<div class="faq-item reveal delay-1"><button>Can this include automation work too?</button><div><p>Yes. The custom package is designed to open that conversation, especially for internal business tools and workflow improvements.</p></div></div>
-<div class="faq-item reveal delay-2"><button>Can I replace the pricing later?</button><div><p>Absolutely. This version is meant to give you a premium presentation now, and it can be adjusted anytime.</p></div></div>
-</div></section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-meta">
-      <a class="brand footer-brand" href="/">
-        <span class="brand-mark">BDT</span>
-        <span>
-          <strong>Blessing DevTech</strong>
-          <small>Premium Digital Agency</small>
-        </span>
-      </a>
-      <p>Modern websites, automation, and business-focused digital systems built to help brands look credible and operate better.</p>
-      <p class="footer-note">Malboro Gardens, Sandton, South Africa · Available for websites, automation projects, and digital business solutions.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="/services">Services</a>
-      <a href="/work">Work</a>
-      <a href="/about">About</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/contact">Contact</a>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <div class="contact-list">
-        <a href="tel:+27725027871">+27 72 502 7871</a>
-        <a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Blessing DevTech</a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© <span data-current-year></span> Blessing DevTech Solutions. Premium sample website prepared for client presentation.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing-section">
+      <div class="pricing-hero">
+        <span class="section-kicker">Monthly Website Management</span>
+        <h1>Website Management &amp; Hosting Plans</h1>
+        <p class="subtitle">
+          Clear monthly plans designed to keep your website online, secure, fast, and properly maintained
+          after launch. Website design and development is quoted separately based on project scope.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <h3>Basic Care</h3>
+          <p class="plan-note">Essential ongoing care for small business websites.</p>
+          <div class="price">R450 <span>/ month</span></div>
+          <ul>
+            <li>Modern cloud hosting</li>
+            <li>SSL certificate</li>
+            <li>Monthly website updates</li>
+            <li>Daily backups</li>
+            <li>Basic security monitoring</li>
+            <li>Email support</li>
+          </ul>
+          <p class="plan-fit"><strong>Best for:</strong> brochure websites and simple business sites.</p>
+          <a class="btn btn-primary plan-select" href="contact.html?plan=Basic%20Care">Choose Basic Care</a>
+        </article>
+
+        <article class="price-card highlight reveal">
+          <span class="badge">Most Popular</span>
+          <h3>Standard Growth</h3>
+          <p class="plan-note">The best balance of support, speed, and ongoing small updates.</p>
+          <div class="price">R850 <span>/ month</span></div>
+          <ul>
+            <li>Everything in Basic Care</li>
+            <li>Enhanced website performance</li>
+            <li>30 minutes of monthly content updates</li>
+            <li>Ongoing optimization</li>
+            <li>Uptime monitoring</li>
+            <li>WhatsApp and email support</li>
+          </ul>
+          <p class="plan-fit"><strong>Best for:</strong> growing businesses and lead-focused websites.</p>
+          <a class="btn btn-primary plan-select" href="contact.html?plan=Standard%20Growth">Choose Standard Growth</a>
+        </article>
+
+        <article class="price-card reveal">
+          <h3>Professional Managed</h3>
+          <p class="plan-note">More active support for businesses that need stronger ongoing management.</p>
+          <div class="price">R1,750 <span>/ month</span></div>
+          <ul>
+            <li>Everything in Standard Growth</li>
+            <li>90 minutes of monthly development time</li>
+            <li>Advanced security protection</li>
+            <li>Staging environment for safer changes</li>
+            <li>Monthly website health report</li>
+            <li>Priority support</li>
+          </ul>
+          <p class="plan-fit"><strong>Best for:</strong> higher-traffic and growth-focused business websites.</p>
+          <a class="btn btn-primary plan-select" href="contact.html?plan=Professional%20Managed">Choose Professional Managed</a>
+        </article>
+      </div>
+
+      <section class="pricing-extras reveal">
+        <div class="pricing-split">
+          <div class="addons">
+            <h2>Optional Add-ons</h2>
+            <ul>
+              <li>Domain renewal (.co.za): <strong>R150 / year</strong></li>
+              <li>Additional development time: <strong>Quoted separately</strong></li>
+              <li>Business emails / mailboxes: <strong>R25 / month per account</strong></li>
+            </ul>
+          </div>
+
+          <div class="custom-build-note">
+            <h2>Custom Website Design &amp; Development</h2>
+            <p>
+              Every business has different goals, features, and requirements. Because of that, website design
+              and development is quoted separately based on the project scope instead of using one fixed once-off price.
+            </p>
+            <p>
+              This keeps pricing realistic and allows each client to get a solution that matches their actual business needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-trust reveal">
+        <div class="trust-points">
+          <div class="trust-pill">No long-term contract required</div>
+          <div class="trust-pill">Fast support and ongoing care</div>
+          <div class="trust-pill">Modern cloud hosting and protection</div>
+        </div>
+      </section>
+
+      <section class="pricing-faq reveal">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">Does this include website design and development?</button>
+          <div class="faq-answer">
+            <p>
+              No. Website design and development is quoted separately based on the project scope. These monthly plans
+              cover hosting, support, maintenance, updates, and ongoing website care after launch.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">Can I upgrade my plan later?</button>
+          <div class="faq-answer">
+            <p>
+              Yes. If your business grows or you need more active support, your plan can be upgraded to match your needs.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">What kind of updates are included?</button>
+          <div class="faq-answer">
+            <p>
+              This usually includes text changes, image updates, small content edits, and general website upkeep.
+              Larger changes or new features are quoted separately where needed.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">How does billing work?</button>
+          <div class="faq-answer">
+            <p>
+              Monthly plans are billed in advance. Annual options can also be discussed depending on the project and support needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-cta reveal">
+        <h2>Need a custom website or ongoing website management?</h2>
+        <p>
+          Let’s discuss your project, your goals, and the best ongoing plan for your business.
+        </p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+          <a class="btn btn-secondary" href="https://wa.me/27672565611?text=Hi%20I%20would%20like%20to%20discuss%20a%20website%20project" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Blessing DevTech Solutions</h3>
+        <p>Modern websites, automation, and digital solutions built for real business needs.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+27672565611">+27 67 256 5611</a></p>
+        <p><a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="work.html">Work</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Blessing DevTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
