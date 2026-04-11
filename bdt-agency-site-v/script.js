@@ -128,3 +128,152 @@ if (!document.querySelector('.whatsapp-float')) {
   wa.innerHTML = '<span class="wa-icon">✆</span><span class="wa-label">WhatsApp</span>';
   document.body.appendChild(wa);
 }
+
+// =========================
+// PRICING PAGE ENHANCEMENTS
+// =========================
+
+// FAQ accordion
+document.querySelectorAll(".faq-item").forEach((item) => {
+  const question = item.querySelector(".faq-question");
+  if (!question) return;
+
+  question.addEventListener("click", () => {
+    const isActive = item.classList.contains("active");
+
+    document.querySelectorAll(".faq-item").forEach((faq) => {
+      faq.classList.remove("active");
+    });
+
+    if (!isActive) {
+      item.classList.add("active");
+    }
+  });
+});
+
+// Reveal on scroll
+const revealItems = document.querySelectorAll(".reveal");
+
+if (revealItems.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+}
+
+// Preselect plan on contact page
+const params = new URLSearchParams(window.location.search);
+const selectedPlan = params.get("plan");
+
+if (selectedPlan) {
+  const serviceField =
+    document.querySelector('select[name="service"]') ||
+    document.querySelector("#service") ||
+    document.querySelector('input[name="service"]');
+
+  const messageField =
+    document.querySelector('textarea[name="message"]') ||
+    document.querySelector("#message");
+
+  if (serviceField) {
+    if (serviceField.tagName === "SELECT") {
+      const matchingOption = [...serviceField.options].find(
+        (option) =>
+          option.value.toLowerCase() === selectedPlan.toLowerCase() ||
+          option.text.toLowerCase() === selectedPlan.toLowerCase()
+      );
+
+      if (matchingOption) {
+        serviceField.value = matchingOption.value;
+      } else {
+        serviceField.value = selectedPlan;
+      }
+    } else {
+      serviceField.value = selectedPlan;
+    }
+  }
+
+  if (messageField && !messageField.value.trim()) {
+    messageField.value = `Hi, I'm interested in the ${selectedPlan} plan and would like to discuss my website needs.`;
+  }
+}
+
+// =========================
+// CONTACT FORM SUBMISSION
+// =========================
+
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const formData = new FormData(contactForm);
+
+    const payload = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      company: formData.get("company"),
+      service: formData.get("service"),
+      message: formData.get("message"),
+    };
+
+    try {
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+      }
+
+      if (formStatus) {
+        formStatus.className = "form-status";
+        formStatus.textContent = "";
+      }
+
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || "Failed to send enquiry.");
+      }
+
+      contactForm.reset();
+
+      if (formStatus) {
+        formStatus.className = "form-status success";
+        formStatus.textContent = "Thanks, your enquiry has been sent successfully.";
+      }
+    } catch (error) {
+      if (formStatus) {
+        formStatus.className = "form-status error";
+        formStatus.textContent =
+          error.message || "Something went wrong while sending your enquiry.";
+      }
+    } finally {
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = "Send Enquiry";
+      }
+    }
+  });
+}
+
+
