@@ -1,59 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Blessing DevTech Solutions</title>
-  <meta name="description" content="Contact Blessing DevTech Solutions to start a website, automation, or digital systems project." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Get in touch with Blessing DevTech Solutions to discuss your website, automation, or digital project." />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="theme-color" content="#0b1020" />
-  <link rel="canonical" href="https://example.vercel.app/contact" />
 </head>
 <body>
-<header class="site-header"><div class="container nav-wrap"><a class="brand" href="/"><span class="brand-mark">BDT</span><span><strong>Blessing DevTech</strong><small>Solutions</small></span></a><button class="menu-toggle">☰</button><nav class="site-nav"><a href="/services">Services</a><a href="/work">Work</a><a href="/about">About</a><a href="/pricing">Pricing</a><a href="/contact" class="nav-cta active">Start a Project</a><button class="theme-toggle">◐</button></nav></div></header>
-<main>
-<section class="page-hero section"><div class="container narrow reveal"><p class="eyebrow">CONTACT</p><h1>Let’s create something premium, practical, and ready to represent your business properly.</h1><p class="lead">Use this page as a lead-generation page for client demos or outreach.</p></div></section>
-<section class="section"><div class="container contact-grid">
-<div class="feature-card reveal contact-form-card"><div class="form-intro"><p class="eyebrow">START A PROJECT</p><h2>Project enquiry</h2><p>Share the type of project you want to build and the form can later be connected to email, Formspree, or your preferred backend workflow.</p></div><div class="form-highlights"><span class="tag">Fast response flow</span><span class="tag">Client-ready structure</span><span class="tag">Premium presentation</span></div><form class="contact-form"><div class="form-grid"><label>Full Name<input type="text" placeholder="Your name" /></label><label>Email Address<input type="email" placeholder="you@example.com" /></label></div><div class="form-grid"><label>Phone Number<input type="tel" placeholder="+27 ..." /></label><label>Project Type<select><option>Business Website</option><option>Landing Page</option><option>Automation / Internal Tool</option><option>Custom Digital Solution</option></select></label></div><label>Project Details<textarea rows="7" placeholder="Tell us about your project, style, timeline, or business goals"></textarea></label><div class="form-submit-row"><p class="form-note">Designed as a premium lead form for demos, client pitching, and future live enquiries.</p><button type="submit" class="btn btn-primary">Send Enquiry</button></div></form></div>
-<div class="contact-side reveal delay-1"><div class="feature-card"><h3>What clients can expect</h3><ul><li>Professional communication</li><li>Clear scope and business-oriented thinking</li><li>Premium design direction</li><li>Technology with practical value</li></ul></div><div class="feature-card"><h3>Contact details</h3><p>You can use these details directly on the live version or replace them later as your business setup grows.</p><div class="contact-list"><a href="tel:+27672565611">+27 67 256 5611</a><a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a></div></div></div>
-</div></section>
-</main>
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-meta">
-      <a class="brand footer-brand" href="/">
-        <span class="brand-mark">BDT</span>
-        <span>
-          <strong>Blessing DevTech</strong>
-          <small>Premium Digital Agency</small>
-        </span>
-      </a>
-      <p>Modern websites, automation, and business-focused digital systems built to help brands look credible and operate better.</p>
-      <p class="footer-note"> Malboro Gardens, Sandton, South Africa · Available for websites, automation projects, and digital business solutions.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <a href="/services">Services</a>
-      <a href="/work">Work</a>
-      <a href="/about">About</a>
-      <a href="/pricing">Pricing</a>
-      <a href="/contact">Contact</a>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <div class="contact-list">
-        <a href="tel:+27725027871">+27 72 502 7871</a>
-        <a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">Blessing DevTech</a>
+      <nav class="desktop-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </div>
-  </div>
-  <div class="container footer-bottom">
-    <p>© <span data-current-year></span> Blessing DevTech Solutions. Premium sample website prepared for client presentation.</p>
-  </div>
-</footer>
-<script src="script.js"></script>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-page">
+      <div class="contact-hero reveal">
+        <span class="section-kicker">Let’s Talk</span>
+        <h1>Start Your Project Conversation</h1>
+        <p>
+          Tell us a bit about what you need and we’ll help you figure out the right next step,
+          whether it’s a new website, ongoing website management, automation, or a custom digital solution.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info-card reveal">
+          <h2>Contact Details</h2>
+          <p>Reach out directly or use the form and we’ll get back to you.</p>
+
+          <div class="contact-info-list">
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <a href="tel:+27725027871">+27 72 502 7871</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a>
+            </div>
+            <div class="info-item">
+              <span class="info-label">WhatsApp</span>
+              <a href="https://wa.me/27672565611?text=Hi%20I%20would%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener">Start Chat</a>
+            </div>
+          </div>
+
+          <div class="contact-side-note">
+            <h3>What we can help with</h3>
+            <ul>
+              <li>Business websites</li>
+              <li>Website management & hosting</li>
+              <li>Internal tools & automation</li>
+              <li>Custom digital solutions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <h2>Send an Enquiry</h2>
+          <p>Share your project details and we’ll come back to you with the right next step.</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+27 ..." />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Business / Company</label>
+                <input type="text" id="company" name="company" placeholder="Your business name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="">Select a service</option>
+                <option value="Basic Care">Basic Care</option>
+                <option value="Standard Growth">Standard Growth</option>
+                <option value="Professional Managed">Professional Managed</option>
+                <option value="Website Design & Development">Website Design & Development</option>
+                <option value="Website Management & Hosting">Website Management & Hosting</option>
+                <option value="Automation & Internal Tools">Automation & Internal Tools</option>
+                <option value="Custom Digital Solution">Custom Digital Solution</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell us about your business, what you need, and any goals or ideas you already have."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Enquiry</button>
+              <p class="form-note">You can also message us on WhatsApp for a quicker conversation.</p>
+            </div>
+
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Blessing DevTech Solutions</h3>
+        <p>Modern websites, automation, and digital solutions built for real business needs.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+27725027871">+27 72 502 7871</a></p>
+        <p><a href="mailto:unarine.luvhimbii@gmail.com">unarine.luvhimbii@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="services.html">Services</a></p>
+        <p><a href="work.html">Work</a></p>
+        <p><a href="pricing.html">Pricing</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Blessing DevTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
