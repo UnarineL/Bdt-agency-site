@@ -1,50 +1,113 @@
-# Blessing DevTech Solutions — V2.1
+# Blessing DevTech Solutions
 
-A Vercel-ready multi-page agency website built as a static HTML/CSS/JS project.
+Modern websites, automation, and business-focused digital systems built to help businesses operate better and grow.
 
-## Files
-- `index.html`
-- `services.html`
-- `work.html`
-- `about.html`
-- `pricing.html`
-- `contact.html`
-- `404.html`
-- `styles.css`
-- `script.js`
-- `vercel.json`
+---
 
-## Deploy to Vercel
-1. Upload this project to a GitHub repository.
-2. Import the repo into Vercel.
-3. Use the **Other** framework preset if Vercel asks.
-4. Leave the build command empty.
-5. Deploy.
+## About
 
-## Clean URLs
-Because `vercel.json` enables `cleanUrls`, these routes work nicely on Vercel:
-- `/`
-- `/services`
-- `/work`
-- `/about`
-- `/pricing`
-- `/contact`
+Blessing DevTech Solutions is a digital solutions provider focused on building:
 
-## Before publishing publicly
-Update these parts first:
-- contact email and phone number
-- social/profile links
-- testimonials
-- case study screenshots
-- canonical domain inside each page (`example.vercel.app`)
+- Professional business websites  
+- Internal tools and workflow automation  
+- Custom digital systems  
+- Secure, scalable solutions for real business operations  
 
-## Local preview
-You can open `index.html` directly in a browser, but a small local server gives the best result.
+The goal is not just design — it’s building solutions that improve efficiency, reduce manual work, and support business growth.
 
+---
 
-## V2.3 polish
-- Improved mobile header spacing and logo sizing
-- Moved theme toggle into a dedicated header action area
-- Better mobile navigation panel and touch targets
-- Auto-close mobile menu on link tap or outside click
-- Footer retained with live year and contact details
+## Services
+
+### Website Design & Development
+Clean, modern, and responsive websites designed to present businesses professionally and convert visitors into enquiries.
+
+### Automation & Internal Tools
+Custom tools and workflows that reduce repetitive tasks and improve operational efficiency.
+
+### Business Systems & Process Design
+Solutions built around how a business actually works — improving structure, clarity, and scalability.
+
+### Security-Focused Delivery
+Projects built with awareness of access control, data handling, and system reliability.
+
+---
+
+## Selected Work
+
+This repository reflects real-world project direction and capabilities, including:
+
+- Exchange Management Automation Tool  
+- Application Expiry Monitoring System  
+- AD User Lookup Utility  
+
+Each project focuses on solving operational challenges and improving business processes.
+
+---
+
+## Tech Stack
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- Vercel (Deployment)  
+
+Built as a lightweight, fast, and scalable static site.
+
+---
+
+## Website Structure
+
+- Home  
+- Services  
+- Work  
+- About  
+- Pricing  
+- Contact  
+
+Designed to function as a complete digital presence for client presentation and business use.
+
+---
+
+## Deployment
+
+The site is deployed using Vercel for:
+
+- Fast global performance  
+- Secure hosting (HTTPS)  
+- Simple scaling  
+- Clean URL routing  
+
+---
+
+## Contact
+
+**Blessing DevTech Solutions**  
+📍 Sandton, South Africa  
+
+📞 +27 72 502 7871  
+📧 unarine.luvhimbii@gmail.com  
+
+---
+
+## Notes
+
+This project represents a production-ready agency website that can be adapted for:
+
+- Client delivery  
+- Portfolio use  
+- Business presentations  
+- Lead generation  
+
+---
+
+## Future Improvements
+
+- Add real client case studies  
+- Include live project screenshots  
+- Expand automation and AI-based solutions  
+- Integrate backend services for enquiries and ticketing  
+
+---
+
+© Blessing DevTech Solutions
